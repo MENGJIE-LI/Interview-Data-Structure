@@ -30,9 +30,9 @@ public class InterviewQuestions {
     }
 
     /**
-    remove duplicates from a unsorted linked list
-    no temporary buffer
-    nested loop to compare each node with every other node, removing duplicates
+     * question: remove duplicates from a unsorted linked list
+     * no temporary buffer
+     * solution: nested loop to compare each node with every other node, removing duplicates
     **/
     public static LinkedNode removeDuplicates(LinkedNode head){
         LinkedNode ans = head;
@@ -51,7 +51,10 @@ public class InterviewQuestions {
         return ans;
     }
 
-    //reverse a linked list
+    /**
+     * question: reverse a linked list
+     * recursion solution
+     */
     public static LinkedNode reverseLinkedList(LinkedNode head){
         if(head == null || head.next == null)
             return head;
@@ -63,7 +66,10 @@ public class InterviewQuestions {
         return newHead;
     }
 
-    //use stack to store half of the linked list
+    /**
+     * question: check if a stack is palindrome
+     * solution: use stack to store half of the linked list
+    **/
     public static boolean isPalindromeUseStack(LinkedNode head){
         LinkedNode slow = head;
         LinkedNode fast = head;
@@ -78,7 +84,6 @@ public class InterviewQuestions {
             slow = slow.next;
         }
 
-        //if the size of the linked list is odd, skip the middle one
         if(fast != null)
             slow = slow.next;
 
@@ -91,6 +96,10 @@ public class InterviewQuestions {
         return true;
     }
 
+    /**
+     * question: check if a stack is palindrome
+     * solution: on itself, reverse the second half and check
+     **/
     public static boolean isPalindromeOnItself(LinkedNode head){
         LinkedNode orgHead = head;
 
