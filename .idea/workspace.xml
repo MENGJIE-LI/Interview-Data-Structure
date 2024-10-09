@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f97a1c24-3496-4c2c-987a-caf0b53c78c4" name="Changes" comment="first commit">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="f97a1c24-3496-4c2c-987a-caf0b53c78c4" name="Changes" comment="add comments">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cracking.the.coding.interview/linkedList/InterviewQuestions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cracking.the.coding.interview/linkedList/InterviewQuestions.java" afterDir="false" />
     </list>
@@ -33,7 +32,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Gradle.Interview-Data-Structure [:InterviewQuestions.main()].executor": "Run",
+    "Gradle.Interview-Data-Structure [:InterviewQuestions.main()].executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -53,7 +52,7 @@
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.cracking.the.coding.interview.linkedList.InterviewQuestions">
     <configuration name="InterviewQuestions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cracking.the.coding.interview.sort.InterviewQuestions" />
       <module name="Interview-Data-Structure.main" />
@@ -67,8 +66,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="cracking.the.coding.interview.linkedList.InterviewQuestions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cracking.the.coding.interview.linkedList.InterviewQuestions" />
+      <module name="Interview-Data-Structure.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cracking.the.coding.interview.linkedList.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.cracking.the.coding.interview.linkedList.InterviewQuestions" />
         <item itemvalue="Application.InterviewQuestions" />
       </list>
     </recent_temporary>
@@ -89,7 +102,7 @@
       <option name="presentableId" value="Default" />
       <updated>1728359812778</updated>
       <workItem from="1728359813969" duration="188000" />
-      <workItem from="1728360014263" duration="917000" />
+      <workItem from="1728360014263" duration="4024000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -99,7 +112,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728359941852</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add comments">
+      <option name="closed" value="true" />
+      <created>1728429554802</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728429554802</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,7 +139,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="add comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="add comments" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -128,7 +150,27 @@
           <line>13</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/cracking.the.coding.interview/linkedList/InterviewQuestions.java</url>
+          <line>126</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/cracking.the.coding.interview/linkedList/InterviewQuestions.java</url>
+          <line>136</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/cracking.the.coding.interview/linkedList/InterviewQuestions.java</url>
+          <line>129</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="cracking.the.coding.interview.linkedList.LinkedNode" memberName="data" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

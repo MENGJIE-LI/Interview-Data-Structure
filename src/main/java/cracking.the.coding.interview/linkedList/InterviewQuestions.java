@@ -15,18 +15,27 @@ public class InterviewQuestions {
         head.appendToTail(5);
         head.appendToTail(5);
         head.print();
+
         head = removeDuplicates(head);
         head.print();
+
         head = reverseLinkedList(head);
         head.print();
+
         head.appendToTail(2);
         head.appendToTail(3);
         head.appendToTail(4);
         head.appendToTail(5);
+
         boolean isPal1 = isPalindromeUseStack(head);
         System.out.println(isPal1);
+
         boolean isPal2 = isPalindromeOnItself(head);
         System.out.println(isPal2);
+
+        LinkedNode kthToLast = kthToLast(head, 2);
+        head.print();
+        System.out.println(kthToLast.data);
     }
 
     /**
@@ -116,17 +125,42 @@ public class InterviewQuestions {
         LinkedNode middle = slow;
 
         LinkedNode newHead = reverseLinkedList(slow.next);
+        middle.next = newHead;
 
         while(newHead != null){
-            if(newHead.data!=head.data) return false;
+            if(newHead.data!=orgHead.data) return false;
 
             newHead = newHead.next;
-            head = head.next;
+            orgHead = orgHead.next;
         }
 
         middle.next = reverseLinkedList(middle.next);
 
         return true;
+    }
+
+    /**
+     * question: return kth to last
+     * solution: two pointers
+     **/
+    public static LinkedNode kthToLast(LinkedNode head, int k){
+        if (head == null) return null;
+
+        LinkedNode a = head;
+        LinkedNode b = head;
+        int i = 0;
+
+        while(a != null && i < k){
+            a = a.next;
+            i++;
+        }
+
+        while(a!=null){
+            a = a.next;
+            b = b.next;
+        }
+
+        return b;
     }
 
 }
