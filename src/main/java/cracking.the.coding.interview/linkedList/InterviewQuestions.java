@@ -36,6 +36,10 @@ public class InterviewQuestions {
         LinkedNode kthToLast = kthToLast(head, 2);
         head.print();
         System.out.println(kthToLast.data);
+
+        deleteMiddleNode(head, 2);
+        head.print();
+
     }
 
     /**
@@ -139,10 +143,15 @@ public class InterviewQuestions {
         return true;
     }
 
+
     /**
-     * question: return kth to last
+     * * question: return kth to last
      * solution: two pointers
-     **/
+     *
+     * @param head head node of the lined list
+     * @param k kth to last
+     * @return the kth node to last
+     */
     public static LinkedNode kthToLast(LinkedNode head, int k){
         if (head == null) return null;
 
@@ -162,5 +171,25 @@ public class InterviewQuestions {
 
         return b;
     }
+
+    /**
+     *
+     * @param head the head node of the linked list
+     * @param m the middle node needed to be deleted
+     */
+    public static void deleteMiddleNode(LinkedNode head, int m){
+        if(head == null) return;
+        LinkedNode a = head;
+        LinkedNode b = head.next;
+        while(b.next != null){
+            if(b.data == m){
+                a.next = b.next;
+            }
+            a = a.next;
+            b = a.next;
+        }
+    }
+
+
 
 }
