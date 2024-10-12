@@ -290,4 +290,28 @@ public class InterviewQuestions {
         return dummyHead.next;
     }
 
+    /**
+     * Get the start point of the intersection of two linked list if existing
+     * Solution: two pointers
+     *
+     * @param head1 head of linked list 1
+     * @param head2 head of linked list 2
+     * @return the head of intersection part
+     */
+    public LinkedNode intersectNode(LinkedNode head1, LinkedNode head2){
+        if(head1 == null || head2 == null){
+            return null;
+        }
+
+        LinkedNode pointer1 = head1;
+        LinkedNode pointer2 = head2;
+
+        while(pointer1 != pointer2){
+            pointer1 = pointer1 == null ? head2 : pointer1.next;
+            pointer2 = pointer2 == null ? head1 : pointer2.next;
+        }
+
+        return pointer1;
+    }
+
 }
