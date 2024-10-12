@@ -6,39 +6,42 @@ public class InterviewQuestions {
 
     public static void main(String[] args){
         LinkedNode head = new LinkedNode(1);
-        head.appendToTail(2);
         head.appendToTail(3);
-        head.appendToTail(4);
         head.appendToTail(5);
+        head.appendToTail(8);
         head.appendToTail(5);
+        head.appendToTail(10);
         head.appendToTail(2);
-        head.appendToTail(5);
-        head.appendToTail(5);
+        head.appendToTail(1);
+        head.appendToTail(1);
         head.print();
 
-        head = removeDuplicates(head);
-        head.print();
+//        head = removeDuplicates(head);
+//        head.print();
+//
+//        head = reverseLinkedList(head);
+//        head.print();
+//
+//        head.appendToTail(2);
+//        head.appendToTail(3);
+//        head.appendToTail(4);
+//        head.appendToTail(5);
+//
+//        boolean isPal1 = isPalindromeUseStack(head);
+//        System.out.println(isPal1);
+//
+//        boolean isPal2 = isPalindromeOnItself(head);
+//        System.out.println(isPal2);
+//
+//        LinkedNode kthToLast = kthToLast(head, 2);
+//        head.print();
+//        System.out.println(kthToLast.data);
+//
+//        deleteMiddleNode(head, 2);
+//        head.print();
 
-        head = reverseLinkedList(head);
-        head.print();
-
-        head.appendToTail(2);
-        head.appendToTail(3);
-        head.appendToTail(4);
-        head.appendToTail(5);
-
-        boolean isPal1 = isPalindromeUseStack(head);
-        System.out.println(isPal1);
-
-        boolean isPal2 = isPalindromeOnItself(head);
-        System.out.println(isPal2);
-
-        LinkedNode kthToLast = kthToLast(head, 2);
-        head.print();
-        System.out.println(kthToLast.data);
-
-        deleteMiddleNode(head, 2);
-        head.print();
+        LinkedNode partitionHead = partition(head, 5);
+        partitionHead.print();
 
     }
 
@@ -110,9 +113,12 @@ public class InterviewQuestions {
     }
 
     /**
-     * question: check if a stack is palindrome
-     * solution: on itself, reverse the second half and check
-     **/
+     * Question: check if a stack is palindrome
+     * Solution: on itself, reverse the second half and check
+     *
+     * @param head the head node of the linked list
+     * @return return true or false
+     */
     public static boolean isPalindromeOnItself(LinkedNode head){
         LinkedNode orgHead = head;
 
@@ -145,8 +151,8 @@ public class InterviewQuestions {
 
 
     /**
-     * * question: return kth to last
-     * solution: two pointers
+     * Question: return kth to last
+     * Solution: two pointers
      *
      * @param head head node of the lined list
      * @param k kth to last
@@ -173,6 +179,7 @@ public class InterviewQuestions {
     }
 
     /**
+     * Delete nodes in the middle of the linked list
      *
      * @param head the head node of the linked list
      * @param m the middle node needed to be deleted
@@ -189,6 +196,56 @@ public class InterviewQuestions {
             b = a.next;
         }
     }
+
+    /**
+     * Partition a linked list
+     * Solution: record 4 pointers: head and tail of the two list
+     *  - the smaller part
+     *  - the greater part
+     *  These two parts are then combined to form the final partitioned list.
+     *
+     * @param head the head of the list
+     * @param x the partition element
+     * @return the head of the result linked list
+     */
+    public static LinkedNode partition(LinkedNode head, int x){
+        if(head == null) return null;
+
+        LinkedNode curr = head;
+        LinkedNode smallHead = null, smallTail = null, bigHead = null, bigTail = null;
+
+        while(curr != null ){
+            LinkedNode nextNode = curr.next; // save next node
+            curr.next = null; // break the link
+
+            if(curr.data < x){
+                if(smallHead == null){
+                    smallHead = curr;
+                    smallTail = smallHead;
+                }else{
+                    smallTail.next = curr;
+                    smallTail = smallTail.next;
+                }
+            }else{
+                if(bigHead == null){
+                    bigHead = curr;
+                    bigTail = bigHead;
+                }else{
+                    bigTail.next = curr;
+                    bigTail = curr;
+                }
+            }
+            curr = nextNode; // Move to the next node
+        }
+
+        if(smallHead != null) {
+            smallTail.next = bigHead;
+            return smallHead;
+        }else{
+            return bigHead;
+        }
+    }
+
 
 
 
