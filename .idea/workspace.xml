@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f97a1c24-3496-4c2c-987a-caf0b53c78c4" name="Changes" comment="delete middle nodes in linked list">
+    <list default="true" id="f97a1c24-3496-4c2c-987a-caf0b53c78c4" name="Changes" comment="partition a linked list">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cracking.the.coding.interview/linkedList/InterviewQuestions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cracking.the.coding.interview/linkedList/InterviewQuestions.java" afterDir="false" />
     </list>
@@ -103,7 +103,7 @@
       <option name="presentableId" value="Default" />
       <updated>1728359812778</updated>
       <workItem from="1728359813969" duration="188000" />
-      <workItem from="1728360014263" duration="12553000" />
+      <workItem from="1728360014263" duration="18979000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -137,7 +137,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728532587555</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="partition a linked list">
+      <option name="closed" value="true" />
+      <created>1728761611777</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1728761611777</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,7 +167,8 @@
     <MESSAGE value="add comments" />
     <MESSAGE value="kth to last" />
     <MESSAGE value="delete middle nodes in linked list" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete middle nodes in linked list" />
+    <MESSAGE value="partition a linked list" />
+    <option name="LAST_COMMIT_MESSAGE" value="partition a linked list" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -171,22 +180,20 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/cracking.the.coding.interview/linkedList/InterviewQuestions.java</url>
-          <line>136</line>
-          <option name="timeStamp" value="2" />
+          <line>268</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/cracking.the.coding.interview/linkedList/InterviewQuestions.java</url>
-          <line>146</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/cracking.the.coding.interview/linkedList/InterviewQuestions.java</url>
-          <line>139</line>
-          <option name="timeStamp" value="4" />
+          <line>271</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/cracking.the.coding.interview/linkedList/InterviewQuestions.java</url>
-          <line>186</line>
+          <line>197</line>
           <properties class="cracking.the.coding.interview.linkedList.InterviewQuestions" method="deleteMiddleNode">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />

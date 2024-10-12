@@ -5,16 +5,16 @@ import java.util.Stack;
 public class InterviewQuestions {
 
     public static void main(String[] args){
-        LinkedNode head = new LinkedNode(1);
-        head.appendToTail(3);
-        head.appendToTail(5);
-        head.appendToTail(8);
-        head.appendToTail(5);
-        head.appendToTail(10);
-        head.appendToTail(2);
-        head.appendToTail(1);
-        head.appendToTail(1);
-        head.print();
+//        LinkedNode head = new LinkedNode(1);
+//        head.appendToTail(3);
+//        head.appendToTail(5);
+//        head.appendToTail(8);
+//        head.appendToTail(5);
+//        head.appendToTail(10);
+//        head.appendToTail(2);
+//        head.appendToTail(1);
+//        head.appendToTail(1);
+//        head.print();
 
 //        head = removeDuplicates(head);
 //        head.print();
@@ -40,9 +40,20 @@ public class InterviewQuestions {
 //        deleteMiddleNode(head, 2);
 //        head.print();
 
-        LinkedNode partitionHead = partition(head, 5);
-        partitionHead.print();
+//        LinkedNode partitionHead = partition(head, 5);
+//        partitionHead.print();
 
+        LinkedNode head3 = new LinkedNode(7);
+
+        head3.print();
+
+        LinkedNode head2 = new LinkedNode(5);
+        head2.appendToTail(9);
+        head2.appendToTail(2);
+        head2.print();
+
+        LinkedNode head = sumList(head3, head2);
+        head.print();
     }
 
     /**
@@ -246,7 +257,37 @@ public class InterviewQuestions {
         }
     }
 
+    /**
+     * sum two linked list
+     *
+     * @param head1 the list 1
+     * @param head2 the list 2
+     * @return head of the result linked list
+     */
+    public static LinkedNode sumList(LinkedNode head1, LinkedNode head2){
 
+        if(head1 == null && head2 == null) return null;
 
+        LinkedNode curr1 = head1, curr2 = head2, dummyHead = new LinkedNode(0), currHead = dummyHead;
+        int flag = 0;
+
+        while(curr1 != null || curr2 != null){
+            int a = curr1 != null ? curr1.data : 0;
+            int b = curr2 != null ? curr2.data : 0;
+
+            int sum = a + b+ flag;
+            flag = sum/10;
+            currHead.next = new LinkedNode(sum % 10);
+
+            currHead = currHead.next;
+            if(curr1 != null) curr1 = curr1.next;
+            if(curr2 != null) curr2 = curr2.next;
+        }
+
+        if(flag > 0){
+            currHead.next = new LinkedNode(flag);
+        }
+        return dummyHead.next;
+    }
 
 }
