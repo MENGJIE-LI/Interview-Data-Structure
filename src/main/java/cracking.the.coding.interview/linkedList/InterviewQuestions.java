@@ -314,4 +314,29 @@ public class InterviewQuestions {
         return pointer1;
     }
 
+    /**
+     * Detect there is a loop in the linked list
+     * Solution: Floyd’s Cycle Detection Algorithm(two pointers, slow and fast, they will meet if there is a cycle)
+     *
+     * @param head the head of the linked list
+     * @return true if there is a loop in the linked list
+     */
+    public boolean loopDetection(LinkedNode head){
+        if(head == null){
+            return false;
+        }
+
+        LinkedNode slow = head, fast = head;
+        while(fast != null && fast.next != null){
+            slow = slow.next;
+            fast = fast.next.next;
+
+            if (slow == fast) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
 }
