@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f97a1c24-3496-4c2c-987a-caf0b53c78c4" name="Changes" comment="get the min element in a stack">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cracking.the.coding.interview/stacksAndQueues/SetOfStacks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cracking.the.coding.interview/stacksAndQueues/SortStack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +17,31 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Interview-Data-Structure" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Interview-Data-Structure" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -37,36 +62,50 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Interview-Data-Structure [:InterviewQuestions.main()].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/lmj/Documents/GitHub/Interview-Data-Structure/src/main/java",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/Users/lmj/Documents/GitHub/Interview-Data-Structure/src/main/java/org/example/Main.java",
-    "settings.editor.selected.configurable": "preferences.remoteExternalTools",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Interview-Data-Structure [:InterviewQuestions.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Interview-Data-Structure [:SortStack.main()].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/lmj/Documents/GitHub/Interview-Data-Structure/src/main/java&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/lmj/Documents/GitHub/Interview-Data-Structure/src/main/java/org/example/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.remoteExternalTools&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.cracking.the.coding.interview.linkedList.InterviewQuestions">
+  <component name="RunManager" selected="Application.SortStack">
     <configuration name="InterviewQuestions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cracking.the.coding.interview.sort.InterviewQuestions" />
       <module name="Interview-Data-Structure.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cracking.the.coding.interview.sort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SortStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cracking.the.coding.interview.stacksAndQueues.SortStack" />
+      <module name="Interview-Data-Structure.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cracking.the.coding.interview.stacksAndQueues.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -89,6 +128,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SortStack" />
         <item itemvalue="Application.cracking.the.coding.interview.linkedList.InterviewQuestions" />
         <item itemvalue="Application.InterviewQuestions" />
       </list>
@@ -110,7 +150,8 @@
       <option name="presentableId" value="Default" />
       <updated>1728359812778</updated>
       <workItem from="1728359813969" duration="188000" />
-      <workItem from="1728360014263" duration="28085000" />
+      <workItem from="1728360014263" duration="30223000" />
+      <workItem from="1728915189406" duration="162000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -184,7 +225,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728859075660</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="get the min element in a stack">
+      <option name="closed" value="true" />
+      <created>1728877979223</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1728877979223</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
