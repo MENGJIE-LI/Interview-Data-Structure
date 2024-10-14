@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f97a1c24-3496-4c2c-987a-caf0b53c78c4" name="Changes" comment="loop detection in a linked list">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cracking.the.coding.interview/stacksAndQueues/getMinStack.java" afterDir="false" />
+    <list default="true" id="f97a1c24-3496-4c2c-987a-caf0b53c78c4" name="Changes" comment="get the min element in a stack">
+      <change afterPath="$PROJECT_DIR$/src/main/java/cracking.the.coding.interview/stacksAndQueues/SetOfStacks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -110,7 +110,7 @@
       <option name="presentableId" value="Default" />
       <updated>1728359812778</updated>
       <workItem from="1728359813969" duration="188000" />
-      <workItem from="1728360014263" duration="26111000" />
+      <workItem from="1728360014263" duration="28085000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -176,7 +176,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728854768102</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="get the min element in a stack">
+      <option name="closed" value="true" />
+      <created>1728859075660</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1728859075660</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,7 +210,8 @@
     <MESSAGE value="sum two linked lists" />
     <MESSAGE value="get intersection of two linked lists" />
     <MESSAGE value="loop detection in a linked list" />
-    <option name="LAST_COMMIT_MESSAGE" value="loop detection in a linked list" />
+    <MESSAGE value="get the min element in a stack" />
+    <option name="LAST_COMMIT_MESSAGE" value="get the min element in a stack" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
