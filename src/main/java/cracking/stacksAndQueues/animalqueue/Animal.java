@@ -1,4 +1,4 @@
-package cracking.the.coding.interview.stacksAndQueues.animalqueue;
+package cracking.stacksAndQueues.animalqueue;
 
 public abstract class Animal{
     private int order;

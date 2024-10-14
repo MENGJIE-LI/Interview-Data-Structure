@@ -1,4 +1,4 @@
-package cracking.the.coding.interview.stacksAndQueues;
+package cracking.stacksAndQueues;
 
 import java.util.ArrayList;
 import java.util.List;

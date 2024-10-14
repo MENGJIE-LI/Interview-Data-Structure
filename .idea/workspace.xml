@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f97a1c24-3496-4c2c-987a-caf0b53c78c4" name="Changes" comment="sort stack">
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cracking/the/coding/interview/stacksAndQueues/animalqueue/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cracking/the/coding/interview/stacksAndQueues/animalqueue/AnimalQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cracking/the/coding/interview/stacksAndQueues/animalqueue/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cracking/the/coding/interview/stacksAndQueues/animalqueue/Dog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cracking.the.coding.interview/stacksAndQueues/getMinStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cracking.the.coding.interview/stacksAndQueues/GetMinStack.java" afterDir="false" />
-    </list>
+    <list default="true" id="f97a1c24-3496-4c2c-987a-caf0b53c78c4" name="Changes" comment="animal shelter queue" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -191,7 +180,7 @@
       <updated>1728359812778</updated>
       <workItem from="1728359813969" duration="188000" />
       <workItem from="1728360014263" duration="30223000" />
-      <workItem from="1728915189406" duration="2752000" />
+      <workItem from="1728915189406" duration="3125000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -281,7 +270,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728916357761</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="animal shelter queue">
+      <option name="closed" value="true" />
+      <created>1728918697753</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1728918697753</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,7 +306,8 @@
     <MESSAGE value="loop detection in a linked list" />
     <MESSAGE value="get the min element in a stack" />
     <MESSAGE value="sort stack" />
-    <option name="LAST_COMMIT_MESSAGE" value="sort stack" />
+    <MESSAGE value="animal shelter queue" />
+    <option name="LAST_COMMIT_MESSAGE" value="animal shelter queue" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

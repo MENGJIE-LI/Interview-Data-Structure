@@ -1,4 +1,4 @@
-package cracking.the.coding.interview.arrays;
+package cracking.arrays;
 
 import java.util.*;
 import java.util.stream.Collectors;

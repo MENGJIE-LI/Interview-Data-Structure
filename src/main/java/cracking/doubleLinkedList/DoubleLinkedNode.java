@@ -1,4 +1,4 @@
-package cracking.the.coding.interview.doubleLinkedList;
+package cracking.doubleLinkedList;
 
 public class DoubleLinkedNode {
     DoubleLinkedNode next = null;

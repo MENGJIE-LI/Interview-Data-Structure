@@ -1,6 +1,5 @@
-package cracking.the.coding.interview.stacksAndQueues.animalqueue;
+package cracking.stacksAndQueues.animalqueue;
 
-import java.security.PublicKey;
 import java.util.LinkedList;
 
 public class AnimalQueue {

@@ -1,4 +1,4 @@
-package cracking.the.coding.interview.sort;
+package cracking.sort;
 
 import java.util.Arrays;
 

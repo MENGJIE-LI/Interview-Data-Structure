@@ -1,4 +1,4 @@
-package cracking.the.coding.interview.linkedList;
+package cracking.linkedList;
 
 public class LinkedNode {
     LinkedNode next = null;
