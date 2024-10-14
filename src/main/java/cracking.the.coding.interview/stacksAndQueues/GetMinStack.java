@@ -2,7 +2,7 @@ package cracking.the.coding.interview.stacksAndQueues;
 
 import java.util.Stack;
 
-public class getMinStack {
+public class GetMinStack {
 
     static Stack<Integer> dataStack = new Stack<>();
     static Stack<Integer> minStack = new Stack<>();

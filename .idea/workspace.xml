@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f97a1c24-3496-4c2c-987a-caf0b53c78c4" name="Changes" comment="get the min element in a stack">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cracking.the.coding.interview/stacksAndQueues/SortStack.java" afterDir="false" />
+    <list default="true" id="f97a1c24-3496-4c2c-987a-caf0b53c78c4" name="Changes" comment="sort stack">
+      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cracking/the/coding/interview/stacksAndQueues/animalqueue/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cracking/the/coding/interview/stacksAndQueues/animalqueue/AnimalQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cracking/the/coding/interview/stacksAndQueues/animalqueue/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cracking/the/coding/interview/stacksAndQueues/animalqueue/Dog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cracking.the.coding.interview/stacksAndQueues/getMinStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cracking.the.coding.interview/stacksAndQueues/GetMinStack.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +44,12 @@
                 <item name="Interview-Data-Structure" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Interview-Data-Structure" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -46,6 +60,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Kotlin Class" />
         <option value="Class" />
       </list>
     </option>
@@ -62,25 +77,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.Interview-Data-Structure [:InterviewQuestions.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Interview-Data-Structure [:SortStack.main()].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/lmj/Documents/GitHub/Interview-Data-Structure/src/main/java&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/lmj/Documents/GitHub/Interview-Data-Structure/src/main/java/org/example/Main.java&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.remoteExternalTools&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Interview-Data-Structure [:InterviewQuestions.main()].executor": "Run",
+    "Gradle.Interview-Data-Structure [:SortStack.main()].executor": "Run",
+    "Gradle.Interview-Data-Structure [clean].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/lmj/Documents/GitHub/Interview-Data-Structure/src/main/java",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/Users/lmj/Documents/GitHub/Interview-Data-Structure/src/main/java/org/example/Main.java",
+    "settings.editor.selected.configurable": "preferences.remoteExternalTools",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java" />
@@ -105,7 +122,7 @@
       <module name="Interview-Data-Structure.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cracking.the.coding.interview.stacksAndQueues.*" />
+          <option name="PATTERN" value="cracking.the.coding.interview.stacksAndQueues.animalShelter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,8 +143,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Interview-Data-Structure [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Interview-Data-Structure [clean]" />
         <item itemvalue="Application.SortStack" />
         <item itemvalue="Application.cracking.the.coding.interview.linkedList.InterviewQuestions" />
         <item itemvalue="Application.InterviewQuestions" />
@@ -151,7 +191,7 @@
       <updated>1728359812778</updated>
       <workItem from="1728359813969" duration="188000" />
       <workItem from="1728360014263" duration="30223000" />
-      <workItem from="1728915189406" duration="162000" />
+      <workItem from="1728915189406" duration="2752000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -233,7 +273,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728877979223</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="sort stack">
+      <option name="closed" value="true" />
+      <created>1728916357761</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1728916357761</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,7 +308,8 @@
     <MESSAGE value="get intersection of two linked lists" />
     <MESSAGE value="loop detection in a linked list" />
     <MESSAGE value="get the min element in a stack" />
-    <option name="LAST_COMMIT_MESSAGE" value="get the min element in a stack" />
+    <MESSAGE value="sort stack" />
+    <option name="LAST_COMMIT_MESSAGE" value="sort stack" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
